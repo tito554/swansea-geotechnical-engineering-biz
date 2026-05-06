@@ -1,0 +1,51 @@
+# Geotechnical Engineering — Swansea
+
+> Geotechnical engineering services in Swansea, United Kingdom.
+
+## Services
+- [Anchors](https://swansea.geotechnical-engineering.biz/anchors/)
+- [Atterberg Limits](https://swansea.geotechnical-engineering.biz/atterberg-limits/)
+- [Cbr Road](https://swansea.geotechnical-engineering.biz/cbr-road/)
+- [Cpt Test](https://swansea.geotechnical-engineering.biz/cpt-test/)
+- [Deep Excavations](https://swansea.geotechnical-engineering.biz/deep-excavations/)
+- [Excavation Monitoring](https://swansea.geotechnical-engineering.biz/excavation-monitoring/)
+- [Excavations](https://swansea.geotechnical-engineering.biz/excavations/)
+- [Flexible Pavement](https://swansea.geotechnical-engineering.biz/flexible-pavement/)
+- [Footings](https://swansea.geotechnical-engineering.biz/footings/)
+- [Foundations](https://swansea.geotechnical-engineering.biz/foundations/)
+- [Grain Size](https://swansea.geotechnical-engineering.biz/grain-size/)
+- [Ground Improvement](https://swansea.geotechnical-engineering.biz/ground-improvement/)
+- [Grouting](https://swansea.geotechnical-engineering.biz/grouting/)
+- [In Situ Permeability](https://swansea.geotechnical-engineering.biz/in-situ-permeability/)
+- [Investigation](https://swansea.geotechnical-engineering.biz/investigation/)
+- [Lab In Situ](https://swansea.geotechnical-engineering.biz/lab-in-situ/)
+- [Laboratory](https://swansea.geotechnical-engineering.biz/laboratory/)
+- [Liquefaction](https://swansea.geotechnical-engineering.biz/liquefaction/)
+- [Masw](https://swansea.geotechnical-engineering.biz/masw/)
+- [Mat Foundations](https://swansea.geotechnical-engineering.biz/mat-foundations/)
+- [Piles](https://swansea.geotechnical-engineering.biz/piles/)
+- [Proctor Tests](https://swansea.geotechnical-engineering.biz/proctor-tests/)
+- [Resistivity](https://swansea.geotechnical-engineering.biz/resistivity/)
+- [Retaining Walls](https://swansea.geotechnical-engineering.biz/retaining-walls/)
+- [Rigid Pavement](https://swansea.geotechnical-engineering.biz/rigid-pavement/)
+- [Road Geotechnics](https://swansea.geotechnical-engineering.biz/road-geotechnics/)
+- [Sand Cone Density](https://swansea.geotechnical-engineering.biz/sand-cone-density/)
+- [Seismic](https://swansea.geotechnical-engineering.biz/seismic/)
+- [Seismic Isolation](https://swansea.geotechnical-engineering.biz/seismic-isolation/)
+- [Seismic Microzonation](https://swansea.geotechnical-engineering.biz/seismic-microzonation/)
+- [Seismic Refraction](https://swansea.geotechnical-engineering.biz/seismic-refraction/)
+- [Slope Stability](https://swansea.geotechnical-engineering.biz/slope-stability/)
+- [Slopes](https://swansea.geotechnical-engineering.biz/slopes/)
+- [Soft Ground Tunnels](https://swansea.geotechnical-engineering.biz/soft-ground-tunnels/)
+- [Spt Drilling](https://swansea.geotechnical-engineering.biz/spt-drilling/)
+- [Stone Columns](https://swansea.geotechnical-engineering.biz/stone-columns/)
+- [Test Pits](https://swansea.geotechnical-engineering.biz/test-pits/)
+- [Triaxial](https://swansea.geotechnical-engineering.biz/triaxial/)
+- [Vibrocompaction](https://swansea.geotechnical-engineering.biz/vibrocompaction/)
+
+## Contact
+- Website: https://swansea.geotechnical-engineering.biz/
+
+## About
+This site provides geotechnical engineering services in Swansea, United Kingdom.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
