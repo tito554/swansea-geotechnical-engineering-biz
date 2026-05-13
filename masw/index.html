@@ -71,14 +71,31 @@ section.block p{margin-bottom:1rem;line-height:1.7;color:#1E293B;text-align:just
 table td{padding:.65rem 1rem;border-bottom:1px solid #E5E7EB;font-size:.9rem}
 .card-links a:hover{color:#EAB308}
 table tr:nth-child(even) td{background:#F9FAFB}
-.dd a:hover{background:#F5F5F5;color:#D4A017}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head><body>
+.dd a:hover{background:#F5F5F5;color:#D4A017}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 
 <div class="topbar">
     <div class="logo-area">
         <div class="logo-text"><div class="main">GEOTECHNICAL ENGINEERING</div><div class="sub">SWANSEA</div></div>
     </div>
     <div class="nav">
-        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ Testing</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Ground improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Underground Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
+        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
     </div>
 </div>
 
@@ -89,7 +106,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 
-<section id="main-content" class="block"><div class="container"><p>Swansea's urban fabric stretches from the Tawe river corridor across perched valleys carved into Pennant sandstone, but the near-surface geology tells a more complicated story. Glacial till and soft estuarine silts blanket much of the city centre and SA1, creating abrupt stiffness transitions that catch out generic ground models. A standard borehole log won't capture the shear wave velocity profile — and that's where the MASW method earns its place. We run 24-channel linear arrays across the site, recording Rayleigh wave dispersion to invert a 1D VS profile down to 30 metres. The output is the VS30 value that Eurocode 8 demands for seismic site class. In our experience across South Wales, this parameter flips a design from ground type D to C more often than desk-study assumptions would suggest, directly reducing seismic load factors for <a data-interlink="1" href="/footings/">footings</a> and structural frames.</p><blockquote style="border-left:4px solid #EAB308;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A 50 m/s difference in VS30 can change your seismic site class — and your ground improvement budget — before the first pile is designed.</blockquote></div></section>
+<section id="main-content" class="block"><div class="container"><p>Swansea's urban fabric stretches from the Tawe river corridor across perched valleys carved into Pennant sandstone, but the near-surface geology tells a more complicated story. Glacial till and soft estuarine silts blanket much of the city centre and SA1, creating abrupt stiffness transitions that catch out generic ground models. A standard borehole log won't capture the shear wave velocity profile — and that's where the MASW method earns its place. We run 24-channel linear arrays across the site, recording Rayleigh wave dispersion to invert a 1D VS profile down to 30 metres. The output is the VS30 value that Eurocode 8 demands for seismic site class. In our experience across South Wales, this parameter flips a design from ground type D to C more often than desk-study assumptions would suggest, directly reducing seismic load factors for <a data-interlink="1" href="/footings/">footings</a> and structural frames.</p><blockquote style="border-left:4px solid #EAB308;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A 50 m/s difference in VS30 can change your seismic site class — and your Improvement budget — before the first pile is designed.</blockquote></div></section>
 
 
 
@@ -105,9 +122,9 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <div class="svc-card">
             <div class="card-img" style="background-image:url('/img/tuneles-suelo-blando-1.webp')"></div>
             <div class="card-body">
-                <h3>Underground Excavations</h3>
+                <h3>Excavations</h3>
                 <div class="card-links"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels ›</a><a href="/deep-excavations/">Geotechnical design of deep excavations ›</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring ›</a></div>
-                <a class="card-viewall" href="#excavaciones-subterraneo">VIEW ALL UNDERGROUND EXCAVATIONS ›</a>
+                <a class="card-viewall" href="#excavaciones-subterraneo">VIEW ALL EXCAVATIONS ›</a>
             </div>
         </div>
         <div class="svc-card">
@@ -147,7 +164,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <link rel="stylesheet" href="/css/leaflet.css">
         <script src="/js/leaflet.js"></script>
         <script>
-        (function(){
+(function(){
           var m=L.map("map_ede478",{zoomControl:true,attributionControl:true}).setView([51.6196,-3.9459],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
