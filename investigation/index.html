@@ -111,10 +111,66 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
 @media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head><body>
 
@@ -138,8 +194,6 @@ body>*{max-width:100vw}
 <p>Ground investigation in Swansea must address a varied geological setting, from the Carboniferous Coal Measures and Pennant Sandstone underlying much of the city to the glacial till, alluvium, and estuarine deposits along the Tawe and Loughor corridors. A robust <a href="/investigation/">ground investigation</a> defines the stratigraphy, identifies weak or compressible horizons such as soft estuarine clays, and assesses groundwater regimes influenced by tidal fluctuations in Swansea Bay. Desk study and walkover survey precede intrusive work, with all phases conforming to BS 5930:2015+A1:2020 and Eurocode 7, specifically BS EN 1997-2, to manage geotechnical risk on sites ranging from brownfield redevelopments to coastal infrastructure.</p>
 <p>Intrusive methodologies combine cable percussive and rotary drilling with in-situ techniques selected to recover high-quality parameters in the local ground conditions. <a href="/cpt-test/">Cone penetration testing (CPT)</a> provides near-continuous profiling of tip resistance, sleeve friction, and pore pressure, proving particularly effective in the alluvial and estuarine sequences where undisturbed sampling is challenging. In granular and cohesive strata, <a href="/lab-in-situ/">In-Situ</a> programmes include Standard Penetration Tests (SPT) to BS EN ISO 22476-3, Menard pressuremeter tests, and field permeability assessments. On earthworks and pavement formations, <a href="/sand-cone-density/">field density testing using the sand cone method</a> verifies compaction compliance against Method Specification 600 series. All site operations are executed under UK Specification for Ground Investigation (2nd Edition) with rigorous sample handling for subsequent laboratory analysis.</p>
 <p>Typical Swansea projects demand investigation strategies tailored to urban constraints and the post-industrial landscape. The SA1 Waterfront and University Bay Campus developments required detailed characterisation of dock fill, dredged arisings, and soft alluvium to support piled foundations and Improvement. Landslip assessment on the steep slopes of the Kilvey and Townhill escarpments relies on rotary cored boreholes to define rockhead and discontinuity patterns within the Pennant Sandstone sequence. Residential schemes on former industrial land routinely integrate a combined intrusive and <a href="/laboratory/">laboratory testing</a> programme to satisfy NHBC standards and local authority contaminated land conditions, quantifying both geotechnical design parameters and chemical determinants.</p>
-<img src="/img/ensayo-proctor-1.webp" alt="Investigation in Swansea" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>A typical investigation commences with a bespoke scope aligned with the ground model and structural loads, progressing through utility clearance, drilling or CPT window allocation, and sampling in accordance with BS EN ISO 22475-1. Samples are transported under chain-of-custody to a UKAS-accredited facility for index tests including <a href="/grain-size/">grain size analysis by sieving and hydrometer</a> and <a href="/atterberg-limits/">Atterberg limit determination</a>, generating particle size distribution curves and plasticity characteristics essential for soil classification to BS 5930. The final factual and interpretative reports deliver a clear ground model, characteristic values for foundation design, and actionable recommendations for <a href="/foundations/">foundations</a> or remediation, equipping the design team with a defensible, contract-ready ground investigation package.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cpt-test/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CPT (Cone Penetration Test)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-4805" style="padding:2rem 0">
@@ -172,7 +226,8 @@ body>*{max-width:100vw}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.circle([51.6196,-3.9459],{radius:5000,color:'#171717',weight:2,fillColor:'#404040',fillOpacity:0.18}).addTo(m).bindPopup("Swansea");
+          L.marker([51.6196,-3.9459],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m);
+L.circle([51.6196,-3.9459],{radius:5000,color:'#171717',weight:2,fillColor:'#404040',fillOpacity:0.18}).addTo(m).bindPopup("Swansea");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
